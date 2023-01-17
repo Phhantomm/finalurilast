@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "849708495219",
+    "firebase_url": "https://finalurisidk-default-rtdb.firebaseio.com",
+    "project_id": "finalurisidk",
+    "storage_bucket": "finalurisidk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849708495219:android:edaef25ab7e66aa0b21506",
+        "android_client_info": {
+          "package_name": "com.example.finalurilast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849708495219-sf3j2e345p0fcergn2kvjto44bks1c1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxVjTk5wOUowwRnJNjRYxhw4A-CNsL-ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849708495219-sf3j2e345p0fcergn2kvjto44bks1c1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

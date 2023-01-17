@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="239dp"
+        android:layout_height="379dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_6" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="55dp"
+        android:text="Released in 2011"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="55dp"
+        android:text="Reviews: 8.3/10"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="55dp"
+        android:text="Made by Brain's Base"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="55dp"
+        android:text="Author: Yuki Midorikawa"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        android:textSize="9sp"/>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intrigued by the tale of a mountain god, six-year-old Hotaru Takegawa loses her way in the ancient forest while visiting her uncle. Exhausted and desperate for help, Hotaru is thrilled to find a masked forest spirit named Gin. She learns the hard way that she should not touch the boy, or he would disappear. Hotaru and Gin become close friends as she visits him every summer. However, their relationship and resolve are put to the test, when romantic feelings conflict with the one and only rule."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/lightBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Back->"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
