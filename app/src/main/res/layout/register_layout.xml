@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#303050"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -20,6 +21,7 @@
             <EditText
                 android:id="@+id/Name"
                 android:layout_width="wrap_content"
+                android:textColor="@color/white"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
@@ -30,6 +32,7 @@
                 android:id="@+id/Surname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
@@ -40,6 +43,7 @@
             android:id="@+id/emailReg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textEmailAddress" />
@@ -64,7 +68,19 @@
             android:id="@+id/register"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
+            android:backgroundTint="#302030"
             android:text="Register" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/backReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👈Back"
+        android:backgroundTint="#303050"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

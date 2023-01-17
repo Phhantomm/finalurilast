@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#303050"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -20,6 +21,7 @@
         <EditText
             android:id="@+id/logEmail"
             android:layout_width="match_parent"
+            android:hint="E-mail"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress" />
@@ -29,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Password"
             android:inputType="textPassword" />
 
         <Button
@@ -36,19 +39,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:backgroundTint="#303050"
             android:text="Forgot Password?"
             android:textSize="10sp" />
 
         <Button
             android:id="@+id/loginBut"
             android:layout_width="wrap_content"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
+            android:backgroundTint="#302030"
             android:layout_gravity="center"
             android:text="Login" />
         <Button
             android:id="@+id/createBut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="#303050"
             android:textSize="12sp"
             android:text="Don't have an account? Create one!" />
     </LinearLayout>

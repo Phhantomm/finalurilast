@@ -19,6 +19,7 @@ class Register:Fragment(R.layout.register_layout) {
     private lateinit var pass:EditText
     private lateinit var repass:EditText
     private lateinit var email:EditText
+    private lateinit var back:Button
     private val db = FirebaseDatabase.getInstance().getReference("Users")
     private val auth = FirebaseAuth.getInstance()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -29,6 +30,17 @@ class Register:Fragment(R.layout.register_layout) {
         email = view.findViewById(R.id.emailReg)
         pass = view.findViewById(R.id.regPass)
         repass = view.findViewById(R.id.repregPass)
+        back = view.findViewById(R.id.backReg)
+
+        back.setOnClickListener {
+            val login = Login()
+            val fragmentManager = parentFragmentManager
+            fragmentManager.commitNow {
+                setReorderingAllowed(true)
+                replace(R.id.nav_host_fragment,login)
+            }
+        }
+
         create.setOnClickListener {
             if(repass.text.toString() == pass.text.toString()){
                 FirebaseAuth.getInstance()

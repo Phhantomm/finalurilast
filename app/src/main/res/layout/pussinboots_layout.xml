@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#280137"
     android:layout_height="match_parent">
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -15,6 +16,7 @@
 
     <TextView
         android:id="@+id/textView14"
+        android:textColor="#C99200"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -28,6 +30,7 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#C99200"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="15dp"
         android:text="Made By Dreamworks"
@@ -37,6 +40,7 @@
 
     <TextView
         android:id="@+id/textView16"
+        android:textColor="#C99200"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -49,6 +53,7 @@
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
+        android:textColor="#C99200"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="15dp"
@@ -60,7 +65,9 @@
     <Button
         android:id="@+id/pussBack"
         android:layout_width="wrap_content"
+        android:textColor="#C99200"
         android:layout_height="40dp"
+        android:backgroundTint="@color/black"
         android:text="Back->"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -68,9 +75,22 @@
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
+        android:textColor="#C99200"
         android:layout_height="wrap_content"
         android:text="Puss in Boots discovers that his passion for adventure has taken its toll: he has burned through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/pussBuy"
+        android:layout_width="wrap_content"
+        android:textColor="#C99200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:text="Buy Ticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

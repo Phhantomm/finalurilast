@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#303050"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -22,12 +23,24 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="E-mail"
+            android:textColor="@color/white"
             android:inputType="textEmailAddress" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="#302030"
             android:text="Send on Email" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/forgorBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👈Back"
+        android:backgroundTint="#303050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

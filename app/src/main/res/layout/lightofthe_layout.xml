@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#00FFFF"
     android:layout_height="match_parent">
 
     <ImageView
@@ -17,6 +18,7 @@
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#3B0000"
         android:layout_marginStart="15dp"
         android:layout_marginTop="55dp"
         android:text="Released in 2011"
@@ -31,6 +33,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="55dp"
         android:text="Reviews: 8.3/10"
+        android:textColor="#3B0000"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/textView28"
         android:textSize="10sp"/>
@@ -40,6 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
+        android:textColor="#3B0000"
         android:layout_marginTop="55dp"
         android:text="Made by Brain's Base"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
@@ -50,6 +54,7 @@
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#3B0000"
         android:layout_marginStart="15dp"
         android:layout_marginTop="55dp"
         android:text="Author: Yuki Midorikawa"
@@ -60,6 +65,7 @@
     <TextView
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
+        android:textColor="#3B0000"
         android:layout_height="wrap_content"
         android:text="Intrigued by the tale of a mountain god, six-year-old Hotaru Takegawa loses her way in the ancient forest while visiting her uncle. Exhausted and desperate for help, Hotaru is thrilled to find a masked forest spirit named Gin. She learns the hard way that she should not touch the boy, or he would disappear. Hotaru and Gin become close friends as she visits him every summer. However, their relationship and resolve are put to the test, when romantic feelings conflict with the one and only rule."
         app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +76,19 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:text="Back->"
+        android:textColor="@color/white"
+        android:backgroundTint="#023020"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lightBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#023020"
+        android:text="Buy Ticket"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#F85034"
     android:layout_height="match_parent">
 
     <ImageView
@@ -20,6 +21,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="55dp"
         android:text="Released in 2001"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="10sp"/>
@@ -31,6 +34,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="55dp"
         android:text="Reviews: 8.8/10"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/textView22"
         android:textSize="10sp"/>
@@ -44,6 +49,8 @@
         android:text="Made by Studio Ghibli"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/textView24"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="10sp"/>
 
     <TextView
@@ -52,6 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="55dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:text="Author: Hayao Miyazaki"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/textView25"
@@ -61,6 +70,8 @@
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:text="Stubborn, spoiled, and naïve, 10-year-old Chihiro Ogino is less than pleased when she and her parents discover an abandoned amusement park on the way to their new house. Cautiously venturing inside, she realizes that there is more to this place than meets the eye, as strange things begin to happen once dusk falls."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
@@ -68,8 +79,20 @@
     <Button
         android:id="@+id/spiritedBack"
         android:layout_width="wrap_content"
+        android:backgroundTint="#023020"
         android:layout_height="40dp"
         android:text="Back->"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/spiritedBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#023020"
+        android:text="Buy Ticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
 </androidx.constraintlayout.widget.ConstraintLayout>

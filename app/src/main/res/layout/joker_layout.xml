@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#023020"
     android:layout_height="match_parent">
 
     <ImageView
@@ -19,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="15dp"
+        android:textColor="#FF0000"
         android:text="Released in 2019"
         app:layout_constraintEnd_toStartOf="@+id/imageView9"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="15dp"
+        android:textColor="#FF0000"
         android:text="Reviews: 8.4/10"
         app:layout_constraintEnd_toStartOf="@+id/imageView9"
         app:layout_constraintTop_toBottomOf="@+id/textView43" />
@@ -40,6 +43,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="15dp"
         android:text="Prod. Warner Bros."
+        android:textColor="#FF0000"
         app:layout_constraintEnd_toStartOf="@+id/imageView9"
         app:layout_constraintTop_toBottomOf="@+id/textView44" />
 
@@ -50,6 +54,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="15dp"
         android:text="Author: Todd Philips"
+        android:textColor="#FF0000"
         app:layout_constraintEnd_toStartOf="@+id/imageView9"
         app:layout_constraintTop_toBottomOf="@+id/textView45"
         android:textSize="13sp"/>
@@ -58,6 +63,7 @@
         android:id="@+id/textView47"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#FF0000"
         android:text="“Joker” centers around the iconic arch-nemesis and is an original, standalone story not seen before on the big screen. The exploration of Arthur Fleck (Joaquin Phoenix), a man disregarded by society, is not only a gritty character study, but also a broader cautionary tale."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
@@ -66,7 +72,21 @@
         android:id="@+id/jokerBack"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:textColor="@color/white"
         android:text="Back->"
+        android:backgroundTint="#8B8000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/jokerBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#8B8000"
+        android:text="Buy Ticket"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView47" />
 </androidx.constraintlayout.widget.ConstraintLayout>

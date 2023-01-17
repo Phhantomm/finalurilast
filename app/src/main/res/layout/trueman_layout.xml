@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#a58b47"
     android:layout_height="match_parent">
 
     <ImageView
@@ -17,6 +18,7 @@
         android:id="@+id/textView33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="19dp"
         android:text="Released in 1998"
@@ -30,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
         android:text="Reviews: 8.2/10"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/textView33"
@@ -41,6 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="19dp"
+        android:textColor="@color/white"
         android:text="Scott Rudin Productions"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/textView34"
@@ -53,6 +57,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="19dp"
         android:text="Author: Andrew Niccol"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/textView35"
         android:textSize="10sp"/>
@@ -64,6 +69,7 @@
         android:text="Truman Burbank is the unsuspecting star of The Truman Show, a reality television program filmed 24/7 through thousands of hidden cameras and broadcast to a worldwide audience. Christof, the show's creator and executive producer, seeks to capture Truman's authentic emotions and give audiences a relatable everyman. But slowly he discovers the truth."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        android:textColor="@color/white"
         android:textSize="13sp"/>
 
     <Button
@@ -72,5 +78,16 @@
         android:layout_height="40dp"
         android:text="Back->"
         app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#FF0000"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/truemanBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:text="Buy Ticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
 </androidx.constraintlayout.widget.ConstraintLayout>
