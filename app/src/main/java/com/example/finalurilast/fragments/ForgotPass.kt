@@ -29,21 +29,23 @@ class ForgotPass:Fragment(R.layout.forgot_layout) {
             }
 
         reset.setOnClickListener {
-            FirebaseAuth.getInstance().sendPasswordResetEmail(resetEmail.text.toString())
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        Toast.makeText(activity, "Check Your E-mail", Toast.LENGTH_LONG).show()
-                        val log = Login()
-                        val fragmentManager = parentFragmentManager
-                        fragmentManager.commitNow {
-                            setReorderingAllowed(true)
-                            replace(R.id.nav_host_fragment, log)
-                        }
+            if(resetEmail.text.toString().isNotEmpty()) {
+                FirebaseAuth.getInstance().sendPasswordResetEmail(resetEmail.text.toString())
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            Toast.makeText(activity, "Check Your E-mail", Toast.LENGTH_LONG).show()
+                            val log = Login()
+                            val fragmentManager = parentFragmentManager
+                            fragmentManager.commitNow {
+                                setReorderingAllowed(true)
+                                replace(R.id.nav_host_fragment, log)
+                            }
 
-                    } else {
-                        Toast.makeText(activity, "Invalid E-mail", Toast.LENGTH_SHORT).show()
+                        } else {
+                            Toast.makeText(activity, "Invalid E-mail", Toast.LENGTH_SHORT).show()
+                        }
                     }
-                }
+            }
 
             }
         }

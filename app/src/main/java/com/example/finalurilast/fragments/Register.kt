@@ -42,28 +42,37 @@ class Register:Fragment(R.layout.register_layout) {
         }
 
         create.setOnClickListener {
-            if(repass.text.toString() == pass.text.toString()){
-                FirebaseAuth.getInstance()
-                    .createUserWithEmailAndPassword(email.text.toString(), pass.text.toString())
-                    .addOnCompleteListener { task->
-                        if(task.isSuccessful){
-                            val main = signedIn()
-                            val fragmentManager = parentFragmentManager
-                            fragmentManager.commitNow {
-                                setReorderingAllowed(true)
-                                replace(R.id.nav_host_fragment,main)
+            if (name.text.toString().isNotEmpty() && surname.text.toString()
+                    .isNotEmpty() && email.text.toString().isNotEmpty() && pass.text.toString()
+                    .isNotEmpty() && repass.text.toString().isNotEmpty()
+            ) {
+                if (repass.text.toString() == pass.text.toString()) {
+                    FirebaseAuth.getInstance()
+                        .createUserWithEmailAndPassword(email.text.toString(), pass.text.toString())
+                        .addOnCompleteListener { task ->
+                            if (task.isSuccessful) {
+                                val main = signedIn()
+                                val fragmentManager = parentFragmentManager
+                                fragmentManager.commitNow {
+                                    setReorderingAllowed(true)
+                                    replace(R.id.nav_host_fragment, main)
+                                }
+                                val user = Users(
+                                    name.text.toString(),
+                                    surname.text.toString(),
+                                    email.text.toString()
+                                )
+                                val database = FirebaseDatabase.getInstance().getReference("Users")
+                                database.push().setValue(user)
                             }
-                            val user = Users(name.text.toString(), surname.text.toString(), email.text.toString())
-                            val database = FirebaseDatabase.getInstance().getReference("Users")
-                            database.push().setValue(user)
+
                         }
+                }
 
-                    }
             }
-            else{
-                Toast.makeText(activity,"Passwords don't Match",Toast.LENGTH_SHORT).show()
+            else {
+                Toast.makeText(activity, "Error", Toast.LENGTH_SHORT).show()
             }
-
         }
 
 

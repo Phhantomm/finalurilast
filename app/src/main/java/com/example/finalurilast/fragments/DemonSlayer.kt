@@ -23,6 +23,7 @@ class DemonSlayer:Fragment(R.layout.demonmovie_layout) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         back = view.findViewById(R.id.demonBack)
+        buy = view.findViewById(R.id.demonBuy)
         buy.setOnClickListener {
             dialog()
         }

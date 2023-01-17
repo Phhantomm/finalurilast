@@ -3,8 +3,10 @@
     <item
         android:title="Feed"
         android:id="@+id/feedPage2"
+        android:icon="@drawable/ic_baseline_newspaper_24"
         />
     <item
         android:title="Profile"
-        android:id="@+id/profile"/>
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
 </menu>
