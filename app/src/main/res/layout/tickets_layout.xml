@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="@color/black"
             android:text="If you happen to have your favorite movies on your mind but isnt being shown on Feed as of now, you can write them in the notes below and save it for future!"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -36,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
             android:hint="Film Names"
+            android:textColor="@color/black"
             android:inputType="text"
             />
 
@@ -61,6 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
+            android:textColor="@color/black"
             android:textSize="18sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
